@@ -35,7 +35,7 @@ jobs:
         fi
     - name: Generating Makefiles
       shell: bash
-      run: |
+      run: |
         if [[ "${{ runner.os }}" == "Windows" ]] ; then
           export enable_ccache=off
         else
@@ -60,4 +60,4 @@ jobs:
         name: aseprite
         path: |
           D:/a/aseprite/aseprite/build/bin/data
-          D:/a/aseprite/aseprite/build/bin/aseprite.exe
+           D:/a/aseprite/aseprite/build/bin/aseprite.exe
